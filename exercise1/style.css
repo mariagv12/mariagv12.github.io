@@ -1,0 +1,134 @@
+body {
+    background-color: #f5f4f4;
+  font-family: "Playfair Display", serif;
+    margin: 70px;
+    
+}
+
+
+#sidebar {
+  position: fixed; /* que no es mogui al baixar */
+  top: 20;
+  left: 5;
+}
+
+.top-bar {
+  width: 100%; /* barra tan ample com tota la pantalla */
+  position: absolute; /* para que quede arriba de todo */
+  top: 0;
+  left: 0;
+  padding: 20px; /* espai entre adalt de tot y el text? */
+  box-sizing: border-box;
+}
+
+.nombre {
+  float: left; /* se pega a la izquierda */
+  font-size: 17px;
+  color: #979696;
+  font-weight: 600;
+}
+
+.clase {
+  float: right;       /* se pega a la derecha */
+  font-size: 17px;
+  color: #979696;
+  font-weight: 500;
+}
+
+
+
+
+h1 {
+   
+	display: block; 
+    margin-top: 150px;
+	margin-left: 600px;
+    color: #33529d;
+	font-weight: 800;
+	font-style: italic;
+	font-size: 100px;
+	line-height: 100px;
+    text-align: left;
+
+}
+
+h2 {
+   
+	display: block; 
+    margin-top: 150px;
+	margin-left: 600px;
+    color: #33529d;
+	font-weight: 650;
+	font-style: normal;
+	font-size: 65px;
+	line-height: 50px;
+    text-align: left;
+
+}
+
+p {
+	display: block; 
+    color: #1c1c1c;
+	margin-left: 600px;
+	font-weight: 200;
+	font-style: normal;
+	font-size: 25px;
+	line-height: 30px;
+    text-align: left;
+	margin-bottom: 20px;
+
+}
+
+a {
+    
+    color: #33529d;
+	font-weight: 260;
+	font-style: normal;
+	font-size: 24px;
+	line-height: 28px;
+	   text-decoration: none;
+
+}
+
+a:hover {
+    color: #272377;
+    font-weight: 600;
+}
+
+
+
+
+
+#flexas {
+	color: #272377;
+	margin-left: 0px;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 100px;
+	line-height: 28px;
+	text-align: right;
+
+}
+
+#introo {
+	color: #1c1c1c;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 30px;
+    text-align: center;
+
+	margin-left: 600px;
+    display: inline-block; 
+    width: 250px;
+    height: 90px;
+
+    border: 1px solid #1c1c1c;
+
+    text-decoration: none;  /* quitar subrayado */
+    line-height: 80px;     /* centra el texto verticalmente */
+}
+
+#introo:hover {
+    background-color: #1c1c1c; /* cambia el fondo al pasar el ratón */
+	color: #ecebf1;
+}
