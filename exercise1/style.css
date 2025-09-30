@@ -12,16 +12,18 @@ body {
   left: 5;
 }
 
-.top-bar {
+.top-bar { 
   width: 100%; /* barra tan ample com tota la pantalla */
   position: absolute; /* para que quede arriba de todo */
   top: 0;
   left: 0;
   padding: 20px; /* espai entre adalt de tot y el text? */
   box-sizing: border-box;
+  position: fixed;
 }
 
 .nombre {
+   
   float: left; /* se pega a la izquierda */
   font-size: 17px;
   color: #979696;

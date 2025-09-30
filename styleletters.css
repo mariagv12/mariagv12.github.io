@@ -1,0 +1,76 @@
+.parent {
+  position: relative;
+  width: 200px;   /* ancho total de la letra */
+  height: 300px;  /* alto total de la letra */
+  border: transparent;
+}
+
+.child {
+  height: 50px; /* grossor lineas */
+  background-color: rgb(176, 1, 1);
+  margin-bottom: 50px; /* espai entre les lineas */
+}
+
+.vertical {
+position:absolute ;
+  width: 100px;          /* grosor de la barra vertical */
+  height: 100%;         /* que ocupe toda la altura del contenedor */
+  background-color: rgb(176, 1, 1); /* mismo color que las horizontales */
+}
+
+
+#letter1 {
+top: 50px;
+left: 100px;
+}
+
+
+#letter2 {
+top: 120px;
+left: 100px;
+}
+
+.child2 {
+  height: 50px; /* grossor lineas */
+  background-color: rgb(41, 22, 107);
+  margin-bottom: 50px; /* espai entre les lineas */
+  border-radius:  20px;
+
+}
+
+.vertical2 {
+position:absolute ;
+  width: 100px;          /* grosor de la barra vertical */
+  height: 100%;         /* que ocupe toda la altura del contenedor */
+  background-color: rgb(1, 176, 21); /* mismo color que las horizontales */
+  border-radius:  20px;
+
+}
+
+
+
+#letter3 {
+top: 50px;
+left: 400px;
+}
+
+.child3 {
+  height: 50px; /* grossor lineas */
+  background-color: rgb(229, 93, 211);
+  margin-bottom: 50px; /* espai entre les lineas */
+  border-radius:  20px;
+  transform: rotate(-20deg);
+
+}
+
+.vertical3 {
+position:absolute ;
+  margin-bottom: 80px; /* espai entre les lineas */
+  width: 70px;          /* grosor de la barra vertical */
+  height: 100%;         /* que ocupe toda la altura del contenedor */
+  background-color: rgb(229, 93, 211); /* mismo color que las horizontales */
+  border-radius:  20px;
+  
+
+
+}
