@@ -89,9 +89,8 @@ body {
       bottom: 0px; 
     }
 
-/* Add hover of the whole e2, to make all the triangles, vertical and horizontal 15% bigger on hover, and back to normal on unhover*/
-.e2:hover{
-  transform: scale(20);
-  transform-origin: center;
-  transition: transform 0.5s;
-}
+  .e2:hover{
+    transform: scale(20);
+    transform-origin: center;
+    transition: transform 0.5s;
+  }
