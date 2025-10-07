@@ -9,17 +9,16 @@ function Animatedtoggle(){
 
     if(toggle1.classList.contains("active")){
         text1.innerHTML = "RISD";
-        container2.style.display = "flex"; // mostramos el segundo toggle
+        container2.style.display = "flex"; 
     } else {
         text1.innerHTML = "Rhode Island School of Design";
-        container2.style.display = "none"; // ocultamos el segundo toggle
-        toggle2.classList.remove("active"); // reiniciamos toggle2 si estaba activo
-        document.body.style.background = "white"; // restauramos fondo al ocultar toggle2
+        container2.style.display = "none"; 
+        toggle2.classList.remove("active"); 
+        document.body.style.background = "white";
 
-        // Restaurar estilos del primer toggle
         toggle1.style.background = "rgba(36,84,255,1)"; 
         toggle1.querySelector(".toggle-button").style.background = "white";
-        text1.style.color = "rgba(36,84,255,1)"; // restaurar color original del texto
+        text1.style.color = "rgba(36,84,255,1)";
     }
 }
 
@@ -27,24 +26,19 @@ function AnimatedToggle2(){
     toggle2.classList.toggle("active");
 
     if(toggle2.classList.contains("active")){
-        // Cambiar el fondo de la página
         document.body.style.background = "rgba(36,84,255,1)"; 
 
-        // Cambiar estilos del primer toggle
-        toggle1.style.background = "white"; // fondo blanco
-        toggle1.querySelector(".toggle-button").style.background = "rgba(36,84,255,1)"; // botón azul
-        text1.style.color = "white"; // texto en blanco
+        toggle1.style.background = "white";
+        toggle1.querySelector(".toggle-button").style.background = "rgba(36,84,255,1)"; 
+        text1.style.color = "white"; 
                  text1.innerHTML = "By Maria";
 
     } else {
-        // Restaurar fondo de la página
         document.body.style.background = "white"; 
          text1.innerHTML = "RISD";
-    
 
-        // Restaurar estilos del primer toggle
         toggle1.style.background = "rgba(36,84,255,1)"; 
         toggle1.querySelector(".toggle-button").style.background = "white"; 
-        text1.style.color = "rgba(36,84,255,1)"; // texto original
+        text1.style.color = "rgba(36,84,255,1)"; 
     }
 }
