@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    position: relative;
+   background: rgb(255, 255, 255)
+}
+
+
+.container{
+  position: absolute;
+  top: 22%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+}
+
+.container .toggle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 500px;
+  height: 150px;
+  background: rgba(36,84,255,1);
+  border-radius: 80px;
+  transition: 0.3s;
+
+}
+
+
+
+.container .toggle .toggle-button{
+position: absolute;
+  top: 15px;
+  left: 18px;
+  width: 120px;
+  height: 120px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container .toggle.active{
+background: rgba(36,84,255,1);
+}
+
+.container .toggle.active .toggle-button{
+left: 362px;
+}
+
+
+
+.container .text{
+  position: absolute;
+  top: 200px;
+  left: 250px;
+  font-size: 30px;
+  font-family: 'Franklin Gothic', Helvetica, Arial, sans-serif;
+   margin-left: 10px;
+   color: rgba(36,84,255,1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container2{
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+}
+
+.container2 .toggle2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 200px;
+  background: rgba(36,84,255,1);
+  border-radius: 80px;
+  transition: 0.3s;
+
+}
+
+
+
+.container2 .toggle2 .toggle-button2{
+position: absolute;
+  top: 8px;
+  left: 6px;
+  width: 48px;
+  height: 48px;
+  background: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.container2 .toggle2.active .toggle-button2{
+top: 143px;
+background: rgba(36,84,255,1);
+}
+.container2 .toggle2.active{
+background: rgb(255, 255, 255);
+}
+
+
+
+
+.container2{
+  position: absolute;
+  top: 400px;
+  left: 400px;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+
+}
+
+.container2 .toggle2{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 200px;
+  background: rgba(36,84,255,1);
+  border-radius: 80px;
+  transition: 0.3s;
+
+}
+
+
+
+
+
+
+
+
+
