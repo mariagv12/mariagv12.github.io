@@ -1,0 +1,39 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #000000;
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+}
+
+
+
+
+
+.shapeDot72 {
+  display: inline-block;
+  border-radius: 50%;
+  margin: 4px;
+}
+
+
+
+
+
+#patternBox83 {
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+}
+
+.patternWord83 {
+  display: inline-block;
+  margin: 6px;
+  font-family: Arial, sans-serif;
+}
