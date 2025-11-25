@@ -200,6 +200,9 @@ closeOverlay.addEventListener('click', () => {
   overlay.classList.add('hidden');
   overlay.setAttribute('aria-hidden', 'true');
   overlayImg.src = '';
+   overlayImg.style.left = '';
+  overlayImg.style.top = '';
+  activePointerId = null;
 });
 overlay.addEventListener('pointerdown', (e) => {
   if (e.target === overlay) closeOverlay.click();
