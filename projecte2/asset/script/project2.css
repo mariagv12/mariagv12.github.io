@@ -1,0 +1,165 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url("../img/fondo.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+    height: 100vh;
+    font-family: "Hedvig Letters Serif", serif;
+    transition: background-image 0.1s ;
+}
+
+h1 {
+    position: fixed;
+    top: 250px;  
+    left: 95px;
+    font-size: 14px;
+    max-width: 300px;
+    text-align: left;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    position: fixed;
+    bottom: 75px;
+    right: 60px;
+    font-size: 12px;
+    max-width: 220px;
+    text-align: right;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;
+}
+
+.logo {
+    position: fixed;  
+    top: 100px;           
+    left: -10px;         
+    width: 550px;   
+    height: auto;   
+}
+
+.lineas-escritura {
+    position: fixed;
+    top: 350px;  
+    left: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    z-index: 10;
+}
+
+.linea {
+    width: 300px;
+    border: none;
+    border-bottom: 2px solid black;
+    font-size: 25px;
+    padding: 5px;
+    outline: none;
+    background: transparent;
+    font-family: "Hedvig Letters Serif", serif;
+}
+
+
+.lineas-direccion {
+    position: fixed;
+    top: 50px;  
+    right: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    z-index: 10;
+}
+
+
+.linea2 {
+    width: 250px;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 25px;
+    padding: 5px;
+    outline: none;
+    background: transparent;
+    font-family: "Hedvig Letters Serif", serif;
+}
+
+.direccion-con-label {
+    display: flex;
+    align-items: center;
+}
+
+.direccion-con-label::before {
+    content: "Address:";
+    margin-right: 10px; 
+    font-weight: bold;
+}
+
+
+#imagenes img {
+    width: 420px;
+    position: fixed;
+    top: 200px;
+    left: 700px;
+}
+
+#exportPDF {
+    background-color: #1a392181; 
+    border: none;
+    color: rgb(255, 255, 255);               
+    padding: 6px 12px;         
+    font-size: 14px;           
+    border-radius: 6px;      
+    cursor: pointer;           
+    position: fixed;       
+    bottom: 50px;              
+    right: 70px;   
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+@media print {
+    #exportPDF {
+        display: none;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    h2 {
+        display: none;
+    }
+}
+
+.timer-container {
+    position: fixed;
+    bottom: 80px;
+    left: 100px;
+    text-align: left;
+    font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
+}
+
+.top-text {
+    font-size: 17px;
+    margin-bottom: 10px;
+    font-family: 'Helvetica', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 400;  
+}
+
+.timer {
+    font-size: 40px;
+    font-weight: lighter;
+    font-family: "Hedvig Letters Serif", serif;
+    color: rgb(180, 0, 0);
+}
+
+.bottom-text {
+    font-size: 14px;
+    margin-top: 10px;
+    word-spacing: 7px;
+}
