@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postcard</title>
+
+    <link rel="stylesheet" href="asset/script/project2.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap" rel="stylesheet">
+
+    <script>
+        const hoy = new Date();
+        const mes = hoy.getMonth() + 1; 
+        const dia = hoy.getDate();      
+
+        if (!(mes === 12 && dia >= 1 && dia <= 25)) {
+            window.location.href = "index2.html";
+        }
+    </script>
+</head>
+<body>
+
+<div id="pagina">
+
+    <img src="asset/img/logo.png" class="logo">
+
+    <h1>Discover a new postcard ornament each day, leading up to Christmas.</h1>
+
+<h2>To export your postcard correctly, choose the landscape layout, set the scale to 90%, enable background graphics, and disable headers and footers.</h2>
+
+    <div class="timer-container">
+        <div class="top-text">Time left until Christmas</div>
+        <div id="timer" class="timer"></div>
+        <div class="bottom-text">Days : Hours : Minutes</div>
+    </div>
+
+    <div class="lineas-escritura">
+        <input type="text" class="linea">
+        <input type="text" class="linea">
+        <input type="text" class="linea">
+    </div>
+
+<div class="lineas-direccion">
+    <span class="label">Address:</span>
+    <input type="text" class="linea2">
+   
+</div>
+
+   <div id="imagenes" style="position: relative;"></div>
+<div id="extra" style="position: absolute; top: 0; left: 0; width: 100%;"></div>
+
+    <button id="exportPDF">Print Your Postcard!</button>
+
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+<script src="asset/script/project2.js"></script>
+
+
+</body>
+</html>
