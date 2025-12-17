@@ -1,0 +1,96 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  margin-top: 80px;
+  display: flex;
+  justify-content: center;
+  background: #230bff;
+  padding: 20px;
+}
+
+/* GALERÍA: 3 columnas x 2 filas */
+.gallery {
+  width: 100%;
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* tres columnas */
+  column-gap: 28px;   /* distancia entre columnas */
+  row-gap: 60px;      /* <<< aumenta la distancia entre filas */  
+  justify-items: center;
+}
+
+/* contenedor de cada E, en el centro de la pantalla */
+.letter-e {
+    position: relative;
+    width: 200px;
+    height: 280px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+.vertical {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 18px;
+}
+
+.horizontal {
+  position: absolute;
+  left: 0;
+  height: 18px;
+}
+
+.top    { top: 0px; }
+.middle { top: 130px; }
+.bottom { bottom: 0px; }
+
+/* === E1 === */
+.e1 .vertical { width: 70px; background: #d9d9d9; }
+.e1 .horizontal { height: 50px; background: #d9d9d9; }
+.e1 .top    { width: 160px; position: absolute; top: 8px;}
+.e1 .middle { width: 140px; }
+.e1 .bottom { width: 160px; bottom: 8px; }
+
+/* === E2 === */
+.e2 .vertical { 
+  width: 38px; background: #c83c75;}
+.e2 .horizontal { height: 38px; background: #c83c75; }
+    #triangle-topleft {
+      width: 0;
+      height: 0;
+      border-top: 140px solid #c83c75;
+      border-right: 120px solid transparent;
+      position: absolute;
+      left: 35px; 
+      top: 0; 
+    }
+    #triangle-left {
+      width: 0;
+      height: 0;
+      border-top: 50px solid transparent;
+      border-right: 100px solid #c83c75;
+      border-bottom: 50px solid transparent;
+      position: absolute;
+      left: 20px; 
+      top: 89px;
+    }
+    #triangle-bottomleft {
+      width: 0;
+      height: 0;
+      border-bottom: 140px solid #c83c75;
+      border-right: 120px solid transparent;
+      position: absolute;
+      left: 35px;   
+      bottom: 0px; 
+    }
+
+  .e2:hover{
+    transform: scale(20);
+    transform-origin: center;
+    transition: transform 0.5s;
+  }

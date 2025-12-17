@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Catalan Dishes</title>
+    <link rel="stylesheet" href="asset/script/project.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Serif:opsz@12..24&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  
+  <body>
+    <header id="main-header">
+      <div class="left-text" id="about-text">About</div>
+      <img src="asset/img/logo.png" class="header-logo" id="header-logo" style="display:none" /> 
+      <span class="right-text">Maria Garcia</span>
+    </header>
+    <nav id="sidebar">
+      <span style="margin-left:16px; font-weight:bold;">Menu</span>
+      <ul style="margin-top:20px;">
+        <li><a href="#" id="filterStarters">Starters ³</a></li>
+        <li><a href="#" id="filterMain">Main Dishes ⁴</a></li>
+        <li><a href="#" id="filterDesserts">Desserts ⁴</a></li>
+      </ul>
+    </nav>
+    <div id="intro-screen">
+      <img src="asset/img/imagen-centro.png" id="intro-image" />
+    </div>
+
+   <div id="about-screen" style="display:none">
+  <h2>About Catalan Dishes</h2>
+
+  <p>
+    Catalan Dishes is an interactive website that explores some of the most
+    traditional and culturally significant dishes from Catalonia. The project
+    presents food as a cultural and social element, highlighting how certain
+    recipes carry history, identity, and shared meaning within Catalan culture.
+  </p>
+
+  <p>
+    The website is organized into three categories—Starters, Main Dishes, and
+    Desserts—each featuring dishes that are representative of Catalan cuisine.
+    The main page is designed as a virtual table where all the dishes are
+    displayed. Users can drag and rearrange the plates freely within the table
+    space, recreating the experience of interacting with food in a real, shared
+    setting.
+  </p>
+
+  <p>
+    By clicking on a dish, users can access detailed information, including the
+    dish’s name, its translation from Catalan to Spanish, a brief description of
+    its ingredients, and a cultural or historical note explaining its relevance
+    or symbolism in Catalonia. A navigation menu on the left allows users to
+    filter the content by category, making it possible to view only starters,
+    main dishes, or desserts.
+  </p>
+
+  <p>
+    Through interaction and exploration, Catalan Dishes invites users to engage
+    with Catalan culinary heritage in a playful yet informative way, transforming
+    traditional food culture into an accessible digital experience.
+  </p>
+
+ <p class="credits">
+  Designed and developed by Maria Garcia<br/>
+  Graphic Design student, Rhode Island School of Design
+</p>
+</div>
+
+    </div>
+
+    <div id="viewport" aria-label="Área visible">
+      <div id="space">
+        <img
+          src="asset/img/img1.png"
+          class="drag - item starters"
+          alt="item1"
+          data-id="img1"
+        />
+        <img
+          src="asset/img/img2.png"
+          class="drag - item starters"
+          alt="item2"
+          data-id="img2"
+        />
+        <img
+          src="asset/img/img3.png"
+          class="drag - item starters"
+          alt="item3"
+          data-id="img3"
+        />
+        <img
+          src="asset/img/img4.png"
+          class="drag - item main"
+          alt="item4"
+          data-id="img4"
+        />
+        <img
+          src="asset/img/img5.png"
+          class="drag - item main"
+          alt="item5"
+          data-id="img5"
+        />
+        <img
+          src="asset/img/img6.png"
+          class="drag - item main"
+          alt="item6"
+          data-id="img6"
+        />
+        <img
+          src="asset/img/img7.png"
+          class="drag - item main"
+          alt="item7"
+          data-id="img7"
+        />
+        <img
+          src="asset/img/img8.png"
+          class="drag - item desserts"
+          alt="item8"
+          data-id="img8"
+        />
+        <img
+          src="asset/img/img9.png"
+          class="drag - item desserts"
+          alt="item9"
+          data-id="img9"
+        />
+        <img
+          src="asset/img/img10.png"
+          class="drag - item desserts"
+          alt="item10"
+          data-id="img10"
+        />
+        <img
+          src="asset/img/img11.png"
+          class="drag - item desserts"
+          alt="item11"
+          data-id="img11"
+          />
+      </div>
+    </div>
+
+    <div id="overlay" class="hidden" role="dialog" aria-hidden="true">
+      <button id="closeOverlay" aria-label="Cerrar imagen">✕</button>
+
+      <img id="overlayImg" src="" alt="imagen ampliada" />
+
+      <div id="Text">
+        <h1 id="Title"></h1>
+        <h1 id="Title2"></h1>
+        <p id="Desc"></p>
+        <p id="Desc2"></p>
+        <p id="Desc3"></p>
+        <p id="Desc4"></p>
+      </div>
+    </div>
+
+    <script src="asset/script/project.js"></script>
+  </body>
+</html>

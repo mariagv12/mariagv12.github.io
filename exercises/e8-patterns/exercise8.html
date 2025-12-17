@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Interactive Circles 1</title>
+<link rel="stylesheet" href="asset/exercise81.css">
+</head>
+<body>
+
+<div id="container"></div>
+
+<a href="exercise82.html" class="NextPage">►</a>
+
+<script>
+  const container = document.getElementById("container");
+
+  for (let i = 1; i <= 10; i++) {
+  const circle = document.createElement("div");
+  circle.style.width = (i * 20) + "px";
+  circle.style.height = (i * 20) + "px";
+
+  const r = Math.floor(Math.random() * 256);
+  const g = Math.floor(Math.random() * 256);
+  const b = Math.floor(Math.random() * 256);
+
+  circle.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+  circle.onmouseover = () => circle.style.backgroundColor = "black";
+  circle.onmouseout = () => circle.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+
+  circle.classList.add("circle");
+  container.appendChild(circle);
+}
+</script>
+
+</body>
+</html>
